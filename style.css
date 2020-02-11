@@ -1,17 +1,18 @@
-table, th, td {
-  border: 1px solid black;
-}
 body {
-  background-image: url('background.jpg');
+  background-image: url('background2.jpg');
   background-repeat: no-repeat;
 }
 
 #MainHeading {
 	text-align: center;
+	font-size: 50px;
+	color: #8B0000;
+	font-weight: bold;
+	/*font-family: "Arial";*/
 }
 
 .NavBar {
-	width: 900px;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -21,22 +22,25 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  border-radius: 10px;
 }
 
-.Main {
-	width: 890px;
-	height: 850px;
-	border: solid 5px;
-	margin: 0 auto;
-	
-	color: white;
+#Content {
+	width: 80%;
+	height: 1200px;
+	border: black solid 2px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border-radius: 10px;
 }
 
-li {
+li.nav {
   float: left;
 }
 
-li a {
+a.nav {
   display: block;
   color: white;
   text-align: center;
@@ -48,3 +52,25 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+#thanos {
+	width: 100%;
+}
+
+#login {
+		text-align: right;
+		margin-right: 10%;
+}
+
+/*#footer {
+	width: 890px;
+	border-bottom: black solid 2px;
+	border-left: black solid 2px;
+	border-right: black solid 2px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.PageFooter {
+	text-align: center;
+}*/
