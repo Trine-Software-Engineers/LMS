@@ -1,0 +1,65 @@
+Changes
+
+style.css
+ul.list { 
+
+	margin-top: 40px;
+
+	margin-right: auto;
+
+	margin-left: auto;
+
+	height: 1120px;
+
+	width: 90%;
+
+	overflow: hidden;
+
+	overflow-y: scroll;
+
+	list-style-type: none;
+
+	border: 1px solid blue;
+
+	border-radius: 10px;
+
+}
+
+
+li.scroll {
+
+	border: 1px solid black;
+
+	height: 80px;
+
+	width: 100%;
+
+}
+
+
+img.pic {
+
+	width: 60px; /* width of container */
+    
+	height: 80px;
+    
+	object-fit: cover;
+    
+	object-position: 20% 10px; 
+
+}
+
+
+browse.html
+				<ul class="list">
+
+					<li class="scroll"><img class="pic" src="pic1.jpg"/>thing1</li>
+
+					<li class="scroll"><img class="pic" src="pic2.jpg"/>thing2</li>
+
+					<li class="scroll"><img class="pic" src="pic3.jpg"/>thing3</li>
+
+					<li class="scroll">Link 4</li>
+
+				</ul>
+
