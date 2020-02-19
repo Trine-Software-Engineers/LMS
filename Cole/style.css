@@ -103,3 +103,21 @@ body h1 {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	text-align: center;
 }
+
+
+ul.list { 
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	/*height: 1120px;*/
+	width: 90%;
+	list-style-type: none;
+	/*border-radius: 10px;*/
+}
+
+
+li.scroll {
+	border: 1px solid white;
+	height: 80px;
+	width: 100%;
+}
