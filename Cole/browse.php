@@ -5,12 +5,10 @@
 	</div>
 	
 	<ul>
-		<li><a href="login.php">Login</a></li>
-		<li><a href="about.php">About</a></li>
+        <li><a href="login.php">Logout</a></li>
 		<li><a href="browse.php">Browse</a></li>
 		<li><a href="employee.php">Employee</a></li>
 		<li><a href="admin.php">Admin</a></li>
-		<li><a href="index.php">Home</a></li><br>
 	</ul>
 </div>
 
@@ -19,25 +17,26 @@
     <meta charset="utf-8">
     <title>lms</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        table, tr, td {
-	        color: white;
-            border: 1px solid white;
-        }
-    </style>
 }
   </head>
 	
 <body>
-	<h1>This is the browse screen.</h1>
+
+    <br><br>
+	<h1>Search the Library</h1>
+    <br><br>
     
-    <br><br>
-    <h1>Search the Library</h1>
-    <br><br>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by title...">
 
 
 	<table id="myTable" class="list">
+
+    <tr class="header">
+        <th style="width:30%;">Title</th>
+        <th style="width:10%;">Author</th>
+	    <th style="width:10%;">ISBN</th>
+	    <th style="width:10%;">Quantity</th>
+    </tr>
     
     
 	<?php

@@ -1,41 +1,10 @@
-<!--
-<div class="topbar">
-	<div class="header">
-		<h1>Super Swag Software's Library Management System</h1>
-	</div>
-	
-	<ul>
-		<li><a href="home.html">Logout</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="browse.html">Browse</a></li>
-		<li><a href="employee.html">Employee</a></li>
-		<li><a href="admin.html">Admin</a></li>
-	</ul>
-</div>
--->
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>lms</title>
     <link rel="stylesheet" href="style.css">
   </head>
-	
-<!--<body>
-	<div class="login-box">
-	  <h1>Login</h1>
-	  <div class="textbox">
-		<i class="fas fa-user"></i>
-		<input type="text" placeholder="Username">
-	  </div>
-
-	  <div class="textbox">
-		<i class="fas fa-lock"></i>
-		<input type="password" placeholder="Password">
-	  </div>
-
-	  <input type="button" class="btn" value="Sign in" onclick="window.location.href = 'home.html';">
-	</div>
-</body>-->
 
 <?php
     session_start();
@@ -61,7 +30,7 @@
 
 <body>
 	<div class="login-box">
-	  <h1>Login</h1>
+	  <h1>LMS Login</h1>
 	  <form method="post" action="login.php">
           	<div class="textbox">
 				<i class="fas fa-user"></i>
