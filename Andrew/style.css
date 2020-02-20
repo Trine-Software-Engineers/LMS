@@ -89,6 +89,11 @@ img.pic {
 	object-position: 20% 10px; 
 }
 
+table, tr, td {
+	color: white;
+	border: 1px solid white;
+}
+
 /*#footer {
 	width: 890px;
 	border-bottom: black solid 2px;
