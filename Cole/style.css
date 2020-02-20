@@ -115,6 +115,9 @@ ul.list {
 	/*border-radius: 10px;*/
 }
 
+li {
+	color: white;
+}
 
 li.scroll {
 	border: 1px solid white;
