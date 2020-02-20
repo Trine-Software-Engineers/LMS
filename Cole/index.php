@@ -14,11 +14,11 @@
 	
 	<ul>
 		<li id="NavLogin"><a href="login.php">Login</a></li>
-		<li id="NavAbout"><a href="about.html">About</a></li>
+		<li id="NavAbout"><a href="about.php">About</a></li>
 		<li id="NavBrowse"><a href="browse.php">Browse</a></li>
-		<li id="NavEmployee"><a href="employee.html">Employee</a></li>
-		<li id="NavAdmin"><a href="admin.html">Admin</a></li>
-		<li id="NavHome"><a href="home.html">Home</a></li><br>
+		<li id="NavEmployee"><a href="employee.php">Employee</a></li>
+		<li id="NavAdmin"><a href="admin.php">Admin</a></li>
+		<li id="NavHome"><a href="index.php">Home</a></li><br>
 	</ul>
 </div>
 	

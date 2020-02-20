@@ -5,12 +5,12 @@
 	</div>
 	
 	<ul>
-		<li><a href="login.html">Login</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="browse.html">Browse</a></li>
-		<li><a href="employee.html">Employee</a></li>
-		<li><a href="admin.html">Admin</a></li>
-		<li><a href="home.html">Home</a></li><br>
+		<li><a href="login.php">Login</a></li>
+		<li><a href="about.php">About</a></li>
+		<li><a href="browse.php">Browse</a></li>
+		<li><a href="employee.php">Employee</a></li>
+		<li><a href="admin.php">Admin</a></li>
+		<li><a href="index.php">Home</a></li><br>
 	</ul>
 </div>
 
