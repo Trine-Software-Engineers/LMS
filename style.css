@@ -166,3 +166,19 @@ li.scroll {
   /* Add a grey background color to the table header and on hover */
   background-color: rgba(0,0,0,0.85);
 }
+.addBook{
+	width: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+}
+.addBookInputs{
+	  float: left;
+	  font-size: 40px;
+	  margin-bottom: 50px;
+	  padding: 5px 0;
+	  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  color: #FFFFFF;
+}

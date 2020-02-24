@@ -20,16 +20,25 @@
   </head>
 	
 <body>
-	<h1>Add a book to the System</h1><br>
-	<div class="addBook">
-			<input type="text" name="bookTitle" placeholder="Title">
-		<br><br>
-	 		<input type="text" name="bookAuthor" placeholder="Author">
-		<br><br>
-			<input type="text" name="bookISBN" placeholder="ISBN">
-		<br><br>
-			<input type="text" name="bookQuantity" placeholder="Quantity">
-			<input type="submit" class="btn" value="Add Book">
+	<div class="login-box">
+	  <h1>Add a Book</h1>
+          	<div class="textbox">
+				<input type="text" name="bookTitle" placeholder="Title">
+	  		</div>
+            
+		  	<div class="textbox">
+				<input type="text" name="bookAuthor" placeholder="Author">
+	  		</div>
+		
+			<div class="textbox">
+				<input type="text" name="bookISBN" placeholder="ISBN">
+	  		</div>
+		  
+			<div class="textbox">
+				<input type="text" name="bookQuantity" placeholder="Quantity">
+	  		</div>
+		
+		  	<input type="submit" class="btn" value="Add Book">
 	</div>
 
 	

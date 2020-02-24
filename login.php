@@ -44,6 +44,7 @@
 		  
 		  	<input type="submit" class="btn" value="Sign in" onclick="window.location.href = 'home.html';">
         </form>
+	</div>
 </body>
 
 
