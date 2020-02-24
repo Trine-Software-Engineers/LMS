@@ -1,15 +1,42 @@
 
 <div class="topbar">
 	<div class="header">
-		<h1>Super Swag Software's Library Management System</h1>
+		<h1>Super Swag Software's LMS</h1>
 	</div>
 	
 	<ul>
 		<li><a href="login.php">Logout</a></li>
+		<li><a href="admin.php">Home</a></li>
+		<li><a href="admin.php">Return Book</a></li>
 		<li><a href="browse.php">Browse</a></li>
-		<li><a href="employee.php">Employee</a></li>
-		<li><a href="admin.php">Admin</a></li>
+		
+		<li><a href="borrowbook.php">Borrow Book</a></li>
+		<li><a href="returnbook.php">Return Book</a></li>
+
+		
+		
+		
+		<li><a href="addbook.php">Add Book</a></li>
+		<li><a href="deletebook.php">Delete Book</a></li>
+		<li><a href="editbook.php">Edit Book</a></li>
+		<li><a href="addperson.php">Add Person</a></li>
+		<li><a href="deleteperson.php">Delete Person</a></li>
+		<li><a href="editperson.php">
+			
+			
+			</a></li>
+
 	</ul>
+			<div class="dropdown">
+			  <button class="dropbtn">Book</button>
+				  <div class="dropdown-content">
+					<a href="#">Borrow Book</a>
+					<a href="#">Return Book</a>
+					<a href="#">Add Book</a>
+					<a href="#">Delete Book</a>
+					<a href="#">Edit Book</a>
+				  </div>
+		</div>
 </div>
 
 <html lang="en" dir="ltr">
@@ -41,6 +68,8 @@
 		  	<input type="submit" class="btn" value="Add Book">
 	</div>
 
+	
+	
 	
 </body>
 </html>
