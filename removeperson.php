@@ -44,24 +44,10 @@
 <div class="login-box">
 	  <h1>Remove a person</h1>
 
-
-			<form action="/action_page.php">
-				<select id="type" name="type">
-					<option value="Member">Member</option>
-					<option value="Manager">Manager</option>
-					<option value="Admin">Admin</option>
-
-
-				</select>
-			</form>
-
-
-
           	<div class="textbox">
 				<input type="text" name="personUcard" placeholder="Ucard">
 			</div>
-	
-        
+
 		
 		  	<input type="submit" class="btn" value="Remove person">
 	</div>

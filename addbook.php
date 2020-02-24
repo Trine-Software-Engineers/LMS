@@ -60,6 +60,10 @@
 			<div class="textbox">
 				<input type="text" name="bookAdminLoanTime" placeholder="Admin loan time">
 	  		</div>
+
+			<div class="textbox">
+				<input type="text" name="bookQuantity" placeholder="Quantity">
+	  		</div>
 		
 		  	<input type="submit" class="btn" value="Add Book">
 	</div>
