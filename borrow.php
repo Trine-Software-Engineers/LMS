@@ -38,31 +38,24 @@
 	
 <body>
 
- 
+
 <div class="login-box">
 	  <h1>Borrow a book</h1>
           	<div class="textbox">
-				<input type="text" name="bookTitle" placeholder="Title">
+				<input type="text" name="Ucard" placeholder="Ucard">
 	  		</div>
             
 		  	<div class="textbox">
-				<input type="text" name="bookAuthor" placeholder="Author">
+				<input type="text" name="ISBN" placeholder="ISBN">
 	  		</div>
-		
+
 			<div class="textbox">
-				<input type="text" name="bookISBN" placeholder="ISBN">
-			</div>
-			  
-			<div class="textbox">
-				<input type="text" name="personFirstName" placeholder="First Name">
-			</div>
-			  
-			<div class="textbox">
-				<input type="text" name="personLastName" placeholder="Last Name">
+				<input type="text" name="Date" placeholder="Date (YYYY-MM-DD)">
 	  		</div>
+
 		
 		  	<input type="submit" class="btn" value="Borrow Book">
-	</div>
+</div>
 	
 </body>
 </html>

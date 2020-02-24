@@ -49,19 +49,28 @@
 					<option value="Manager">Manager</option>
 					<option value="Admin">Admin</option>
 
-
 				</select>
 			</form>
 
 
 
           	<div class="textbox">
-				<input type="text" name="personFirstName" placeholder="First Name">
+				<input type="text" name="personName" placeholder="Name">
+			</div>
+
+			<div class="textbox">
+				<input type="text" name="personUcard" placeholder="Ucard">
+			</div>
+
+			<div class="textbox">
+				<input type="text" name="personAddress" placeholder="Address">
+			</div>
+
+			<div class="textbox">
+				<input type="text" name="personTelephone" placeholder="Telephone">
 			</div>
 			  
-			<div class="textbox">
-				<input type="text" name="personLastName" placeholder="Last Name">
-	  		</div>
+
         
 		
 		  	<input type="submit" class="btn" value="Add person">

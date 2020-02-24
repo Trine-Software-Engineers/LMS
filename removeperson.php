@@ -58,12 +58,9 @@
 
 
           	<div class="textbox">
-				<input type="text" name="personFirstName" placeholder="First Name">
+				<input type="text" name="personUcard" placeholder="Ucard">
 			</div>
-			  
-			<div class="textbox">
-				<input type="text" name="personLastName" placeholder="Last Name">
-	  		</div>
+	
         
 		
 		  	<input type="submit" class="btn" value="Remove person">

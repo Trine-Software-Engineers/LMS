@@ -52,6 +52,14 @@
 			<div class="textbox">
 				<input type="text" name="bookISBN" placeholder="ISBN">
 	  		</div>
+
+			<div class="textbox">
+				<input type="text" name="bookMemberLoanTime" placeholder="Member loan time">
+	  		</div>
+
+			<div class="textbox">
+				<input type="text" name="bookAdminLoanTime" placeholder="Admin loan time">
+	  		</div>
 		
 		  	<input type="submit" class="btn" value="Add Book">
 	</div>
