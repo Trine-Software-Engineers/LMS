@@ -20,6 +20,18 @@
   </head>
 	
 <body>
-	<h1>This is the employee screen.</h1>
+	<h1>Add a book to the System</h1><br>
+	<div class="addBook">
+			<input type="text" name="bookTitle" placeholder="Title">
+		<br><br>
+	 		<input type="text" name="bookAuthor" placeholder="Author">
+		<br><br>
+			<input type="text" name="bookISBN" placeholder="ISBN">
+		<br><br>
+			<input type="text" name="bookQuantity" placeholder="Quantity">
+			<input type="submit" class="btn" value="Add Book">
+	</div>
+
+	
 </body>
 </html>
