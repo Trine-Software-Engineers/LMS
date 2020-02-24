@@ -38,8 +38,9 @@
 	
 <body>
 
-    <br><br>
-	<h1>Search the Library</h1>
+ 
+<br><br>
+	<h1>Remove a book</h1>
     <br><br>
     
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by title...">
@@ -95,6 +96,7 @@
         }
     }
 </script>
+	
 	
 </body>
 </html>

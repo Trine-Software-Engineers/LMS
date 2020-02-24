@@ -19,7 +19,8 @@
     if (isset($_POST['username']) && isset($_POST['password'])) {
         if ($_POST['username'] == $username && $_POST['password'] == $password) {
             $_SESSION['loggedin'] = true;
-            header("Location: index.php");
+            header("Location: home.php");
+            //header("Location: index.php");
         } else {
 			$_SESSION['loggedin'] = false;
 		}
@@ -39,13 +40,17 @@
             
 		  	<div class="textbox">
 				<i class="fas fa-lock"></i>
-				<input type="password" name="password" placeholder="Password">
+				<input id="password" type="password" name="password" placeholder="Password">
 	  		</div>
 		  
 		  	<input type="submit" class="btn" value="Sign in" onclick="window.location.href = 'home.html';">
         </form>
+
+
 	</div>
 </body>
+
+
 
 
 

@@ -103,29 +103,6 @@ body h1 {
 	text-align: center;
 }
 
-/*
-ul.list { 
-	margin-top: 40px;
-	margin-right: auto;
-	margin-left: auto;
-	/*height: 1120px;*/
-	/*
-	width: 90%;
-	list-style-type: none;
-	*/
-	/*border-radius: 10px;
-}
-
-li {
-	color: white;
-}
-
-li.scroll {
-	border: 1px solid white;
-	height: 80px;
-	width: 100%;
-}
-*/
 
 #myInput {
 	background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -182,44 +159,74 @@ li.scroll {
 	  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  color: #FFFFFF;
 }
-/* Dropdown Button */
-.dropbtn {
-  background-color: #4CAF50;
+.navbar {
+  overflow: hidden;
+  border-bottom: 3px solid #179aeb;
+}
+
+.navbar a {
+  float: right;
+  font-size: 20px;
   color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+  text-align: center;
+  padding: 10px 40px;
+  text-decoration: none;
+  
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+  float: right;
+  overflow: hidden;
 }
 
-/* Dropdown Content (Hidden by Default) */
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 40px;
+  background-color: transparent;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: hsla(203,84%,51%,0.3)
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: transparent;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  float: none;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: hsla(203,84%,51%,0.3)
+}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar-header{
+	float: left;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: rgba(255,255,255,1.00);	
+}
+.paragraph{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;	
+	padding: 0px 20px 0px 20px;
+}
