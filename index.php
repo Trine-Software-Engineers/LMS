@@ -32,7 +32,7 @@
     if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == false) {
         header("Location: login.php");
     }
-	echo "<h1>You logged in!</h1>";
+	echo "<h1>Usrname and Password do not match!</h1>";
 	?>
 	<button onclick="NavHide()">Hide Employee</button>
 </body>

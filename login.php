@@ -6,26 +6,39 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
+
 <?php
-    session_start();
 
-    $username = "user";
-    $password = "password";
+    $connect= new mysqli('localhost', 'root','' ,'lms');
 
-    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-        //header("Location: index.php");
+    if($connect->connect_error)
+    {
+        die('Connection failed :(');
+    }
+    else
+    {
+        echo 'Connection worked :)';
     }
 
-    if (isset($_POST['username']) && isset($_POST['password'])) {
-        if ($_POST['username'] == $username && $_POST['password'] == $password) {
-            $_SESSION['loggedin'] = true;
-            header("Location: home.php");
-            //header("Location: index.php");
-        } else {
-			$_SESSION['loggedin'] = false;
-		}
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+
+    $sql= "Select name FROM user WHERE name='$username' AND Ucard='$password'";
+
+    $result= $connect->query($sql);
+
+    if ($result-> num_rows>0)
+    {
+        while($row=$result->fetch_assoc())
+        {
+            header("Location: http://localhost/LMS/home.php");
+	    die();
+        }
     }
 
+    else
+    {
+    }
 
 ?>
 
@@ -45,8 +58,6 @@
 		  
 		  	<input type="submit" class="btn" value="Sign in" onclick="window.location.href = 'home.html';">
         </form>
-
-
 	</div>
 </body>
 
