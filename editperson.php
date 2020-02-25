@@ -59,6 +59,14 @@
 		  	<div class="textbox">
 				<input type="text" name="newPersonName" placeholder="New Name">
 	  		</div>
+
+			<div class="textbox">
+				<input type="text" name="newPersonAddress" placeholder="New Address">
+	  		</div>
+
+			<div class="textbox">
+				<input type="text" name="newPersonTelephone" placeholder="New Telephone">
+	  		</div>
 		
 			  <form action="/action_page.php">
 				<select id="type" name="type">
