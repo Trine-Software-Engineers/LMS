@@ -41,11 +41,26 @@
  
 
 
-<div class="login-box">
-	  <h1>Edit a person</h1>
+
+	
+	<div class="login-box">
+	  <h1>Edit a Person</h1>
+          	<div class="textbox">
+				<input type="text" name="uCard" placeholder="Original U-Card">
+	  		</div>
 
 
-			<form action="/action_page.php">
+
+
+			<div class="textbox">
+				<input type="text" name="newPersonUCard" placeholder="New U-Card">
+	  		</div>
+            
+		  	<div class="textbox">
+				<input type="text" name="newPersonName" placeholder="New Name">
+	  		</div>
+		
+			  <form action="/action_page.php">
 				<select id="type" name="type">
 					<option value="Member">Member</option>
 					<option value="Manager">Manager</option>
@@ -56,18 +71,15 @@
 			</form>
 
 
-
-          	<div class="textbox">
-				<input type="text" name="personFirstName" placeholder="First Name">
-			</div>
-			  
-			<div class="textbox">
-				<input type="text" name="personLastName" placeholder="Last Name">
-	  		</div>
-        
 		
-		  	<input type="submit" class="btn" value="Edit person">
+		  	<input type="submit" class="btn" value="Edit Person">
 	</div>
+
 	
+
+
+
+
+
 </body>
 </html>
