@@ -24,14 +24,31 @@
     $password=$_POST['password'];
 
     $sql= "Select name FROM user WHERE name='$username' AND Ucard='$password'";
-
     $result= $connect->query($sql);
+
+    $sql= "SELECT position,Ucard,name,address,telephone from user WHERE name='$username' AND Ucard='$password'";
+    $creds= $connect->query($sql);
+    $value = $creds-> fetch_assoc();
+
+    $admin = "Admin";
+    $manager = "Manager";
 
     if ($result-> num_rows>0)
     {
         while($row=$result->fetch_assoc())
         {
+          if (strcmp($value["position"], $admin) == 0)
+          {
             header("Location: http://localhost/LMS/LMS/home.php");
+          }
+          elseif (strcmp($value["position"], $manager) == 0)
+          {
+            header("Location: http://localhost/LMS/LMS/managerHome.php");
+          }
+          else
+          {
+            header("Location: http://localhost/LMS/LMS/memberHome.php");
+          }
 	    die();
         }
     }
