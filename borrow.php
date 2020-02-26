@@ -3,6 +3,7 @@
 $user = 'root';
 $pass = '';
 $db = 'lms';
+$one = 1;
 
 $conn = new mysqli('localhost', $user, $pass, $db) or die("unable to connect");
 
@@ -26,7 +27,11 @@ if(isset($_POST['submit']))
     else
     {
         echo "error";
-    }
+	}
+	
+	$sql="UPDATE book SET numCopies= numCopies - 1 WHERE ISBN = '$ISBN'";
+	$conn->query($sql);
+
 }
 
 $conn->close();
