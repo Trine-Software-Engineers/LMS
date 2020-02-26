@@ -44,7 +44,7 @@
 
 	
 	<div class="login-box">
-	  <h1>Edit a Person</h1>
+	  <h1>Edit Profile</h1>
           	<div class="textbox">
 				<input type="text" name="uCard" placeholder="Original U-Card">
 	  		</div>
