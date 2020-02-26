@@ -8,26 +8,25 @@
 	
 <div class="navbar">
 	<div class="navbar-header">
-	    <button onclick="goBack()">Go Back</button>
+        <button onclick="goBack()">Go Back</button>
     </div>
 </div>
 	
 <body>
 
     <br><br>
-	<h1>Search the Library</h1>
+	<h1>Search the Borrowed Books</h1>
     <br><br>
     
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by title...">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Ucard...">
 
 
 	<table id="myTable" class="list">
 
     <tr class="header">
-        <th style="width:30%;">Title</th>
-        <th style="width:10%;">Author</th>
-	    <th style="width:10%;">ISBN</th>
-	    <th style="width:10%;">Quantity</th>
+        <th style="width:30%;">Ucard</th>
+        <th style="width:10%;">ISBN</th>
+	    <th style="width:10%;">Date</th>
     </tr>
     
     
@@ -37,11 +36,11 @@
 		die("Connection failed:". $connect_error);
 	}
 
-	$sql = "SELECT Title,Author,ISBN,numCopies from book";
+	$sql = "SELECT `Ucard`, `ISBN`, `date` from borrow";
 	$result = $conn-> query($sql);
 	if ($result-> num_rows > 0) {
 		while ($row = $result-> fetch_assoc()) {
-			echo "<tr><td>". $row["Title"] ."</td><td>". $row["Author"] ."</td><td>". $row["ISBN"] ."</td><td>". $row["numCopies"] ."</td></tr>";
+			echo "<tr><td>". $row["Ucard"] ."</td><td>". $row["ISBN"] ."</td><td>". $row["date"];
 		}
 	}
 	$conn-> close();
@@ -75,11 +74,6 @@
 </body>
 </html>
 
-<script>
-function goBack() {
-  window.history.back();
-}
-</script>
 <script>
 function goBack() {
   window.history.back();
