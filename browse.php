@@ -61,11 +61,11 @@
 		die("Connection failed:". $connect_error);
 	}
 
-	$sql = "SELECT title,author,isbn,copies from books";
+	$sql = "SELECT Title,Author,ISBN,numCopies from book";
 	$result = $conn-> query($sql);
 	if ($result-> num_rows > 0) {
 		while ($row = $result-> fetch_assoc()) {
-			echo "<tr><td>". $row["title"] ."</td><td>". $row["author"] ."</td><td>". $row["isbn"] ."</td><td>". $row["copies"] ."</td></tr>";
+			echo "<tr><td>". $row["Title"] ."</td><td>". $row["Author"] ."</td><td>". $row["ISBN"] ."</td><td>". $row["numCopies"] ."</td></tr>";
 		}
 	}
 	$conn-> close();

@@ -31,7 +31,7 @@
     {
         while($row=$result->fetch_assoc())
         {
-            header("Location: http://localhost/LMS/home.php");
+            header("Location: http://localhost/LMS/LMS/home.php");
 	    die();
         }
     }
