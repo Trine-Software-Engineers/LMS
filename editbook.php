@@ -13,19 +13,19 @@ if($conn->connect_error)
 
 if(isset($_POST['submit']))
 {
-    $isbn = $_POST['bookISBN'];
-    $newISBN = $_POST['newBookISBN'];
-    $title = $_POST['newBookTitle'];
-    $auth = $_POST['newBookAuthor'];
-	$q = $_POST['newBookQuantity'];
-	$mem = $_POST['newBookMemberLoanTime'];
-	$add = $_POST['newBookAdminLoanTime'];
+    $IS = $_POST['bookISBN'];
+    $newIS = $_POST['newBookISBN'];
+    $Title = $_POST['newBookTitle'];
+    $Author = $_POST['newBookAuthor'];
+	$numCopies = $_POST['newBookQuantity'];
+	$memLoanTime = $_POST['newBookMember'];
+	$adminLoanTime = $_POST['newBookAdmin'];
 
 
-	$sql="DELETE FROM `book` WHERE `book`.`ISBN` = '$isbn'";
+	$sql="DELETE FROM `book` WHERE `book`.`ISBN` = '$IS'";
 	$conn->query($sql);
-/*
-    $sql="INSERT INTO `book` (`Title`, `Author`, `ISBN`, `memLoanTime`, `adminLoanTime`, `numCopies`) VALUES ('$title', '$auth', '$newISBN', '$mem', '$add', '$q')";
+
+    $sql="INSERT INTO `book` (`Title`, `Author`, `ISBN`, `memLoanTime`, `adminLoanTime`, `numCopies`) VALUES ('$Title', '$Author', '$newIS', '$memLoanTime', '$adminLoanTime', '$numCopies')";
 
     if($conn->query($sql) == TRUE)
     {
@@ -35,7 +35,7 @@ if(isset($_POST['submit']))
     {
         echo "Ucard already in use";
 	}
-	*/
+
 }
 
 $conn->close();
@@ -58,41 +58,33 @@ $conn->close();
 </div>
 	
 <body>
-
-
 <div class="login-box">
-	  <h1>Edit a Book</h1>
+	<h1>Edit a Book</h1>
 	  <form method="POST" action="#">
-          	<div class="textbox">
-				<input type="text" name="bookISBN" placeholder="Original ISBN">
-	  		</div>
-            
-		  	<div class="textbox">
-				<input type="text" name="newBookISBN" placeholder="New ISBN">
-	  		</div>
-		
-			<div class="textbox">
-				<input type="text" name="newBookTitle" placeholder="New Title">
-	  		</div>
-
-			<div class="textbox">
-				<input type="text" name="newBookAuthor" placeholder="New Author">
-	  		</div>
-
-			<div class="textbox">
-				<input type="text" name="newBookQuantity" placeholder="New Quantity">
-	  		</div>
-
-			<div class="textbox">
-				<input type="text" name="newBookMemberLoanTime" placeholder="New Member loan time">
-	  		</div>
-
-			<div class="textbox">
-				<input type="text" name="newBookAdminLoanTime" placeholder="New Admin loan time">
-	  		</div>
-		  	<input type="submit" class="btn" type= "submit" value="Edit Book">
-		</form>
-	</div>
+        <div class="textbox">
+			<input type="text" name="bookISBN" placeholder="Original ISBN">
+	  	</div>
+		<div class="textbox">
+			<input type="text" name="newBookISBN" placeholder="New ISBN">
+	  	</div>
+		<div class="textbox">
+			<input type="text" name="newBookTitle" placeholder="New Title">
+	  	</div>
+		<div class="textbox">
+			<input type="text" name="newBookAuthor" placeholder="New Author">
+	  	</div>
+		<div class="textbox">
+			<input type="text" name="newBookQuantity" placeholder="New Quantity">
+	  	</div>
+		<div class="textbox">
+			<input type="text" name="newBookMember" placeholder="New Member loan time">
+	  	</div>
+		<div class="textbox">
+			<input type="text" name="newBookAdmin" placeholder="New Admin loan time">
+	  	</div>
+		<input type="submit" class="btn" name= "submit" value="Edit book">
+	   </form>
+</div>
 
 	
 </body>
