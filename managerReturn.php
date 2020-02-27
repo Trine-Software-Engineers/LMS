@@ -3,7 +3,6 @@
 $user = 'root';
 $pass = '';
 $db = 'lms';
-$one = 1;
 
 $conn = new mysqli('localhost', $user, $pass, $db) or die("unable to connect");
 
@@ -16,28 +15,26 @@ if(isset($_POST['submit']))
 {
     $Ucard = $_POST['Ucard'];
 	$ISBN = $_POST['ISBN'];
-	$Date = $_POST['Date'];
+	$Date = $_POST['date'];
 
-    $sql="INSERT INTO `borrow` (`Ucard`, `ISBN`, `date`) VALUES ('$Ucard', '$ISBN', '$Date')";
+    $sql="DELETE FROM `borrow` WHERE `borrow`.`Ucard` = '$Ucard' AND `borrow`.`ISBN` = '$ISBN'";
 
     if($conn->query($sql) == TRUE)
     {
-        echo "Book has been successfully checked out";
+        echo "Book has been successfully checked in";
     }
     else
     {
         echo "error";
 	}
 	
-	$sql="UPDATE book SET numCopies= numCopies - 1 WHERE ISBN = '$ISBN'";
+	$sql="UPDATE book SET numCopies= numCopies + 1 WHERE ISBN = '$ISBN'";
 	$conn->query($sql);
-
 }
 
 $conn->close();
 
 ?>
-
 
 <html lang="en" dir="ltr">
   <head>
@@ -48,44 +45,29 @@ $conn->close();
 
 	
   <div class="navbar">
-
-<div class="navbar-header">
-        <a class="navbar-brand" href="home.php">Super Swag Software's Library Management System</a>
+	<div class="navbar-header">
+        <a class="navbar-brand" href="managerHome.php">Super Swag Software's Library Management System</a>
     </div>
 
   	<a href="login.php">Login Page</a>
-	<a href="browse.php">Browse</a>
+	<a href="managerBrowse.php">Browse</a>
   	<div class="dropdown">
     	<button class="dropbtn">Book 
       		<i class="fa fa-caret-down"></i>
     	</button>
     		<div class="dropdown-content">
-				<a href="browseBorrowed.php">Borrowed Books</a>
-				<a href="borrow.php">Borrow</a>
-				<a href="return.php">Return</a>
-				<a href="addbook.php">Add</a>
-				<a href="editbook.php">Edit</a>
-				<a href="removebook.php">Remove</a>
-   			</div>
-  	</div> 
-	<div class="dropdown">
-    	<button class="dropbtn">Person 
-      		<i class="fa fa-caret-down"></i>
-    	</button>
-    		<div class="dropdown-content">
-				<a href="addperson.php">Add</a>
-				<a href="editperson.php">Edit</a>
-				<a href="removeperson.php">Remove</a>
+				<a href="managerBrowseBorrowed.php">Borrowed Books</a>
+				<a href="managerBorrow.php">Borrow</a>
+				<a href="managerReturn.php">Return</a>
    			</div>
   	</div> 
 </div>
 	
 <body>
 
-
 <div class="login-box">
-	  <h1>Borrow a book</h1>
-	    <form method="POST" action="#">
+	  <h1>Return a book</h1>
+	  <form method="POST" action="#">
           	<div class="textbox">
 				<input type="text" name="Ucard" placeholder="Ucard">
 	  		</div>
@@ -99,8 +81,8 @@ $conn->close();
 	  		</div>
 
 		
-		  	<input type="submit" class="btn" name="submit" value="Borrow Book">
-		</form>
+		  	<input type="submit" name="submit" class="btn" value="Return Book">
+	  </form>
 </div>
 	
 </body>

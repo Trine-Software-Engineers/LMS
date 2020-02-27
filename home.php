@@ -8,6 +8,10 @@
 	
 <div class="navbar">
 
+<div class="navbar-header">
+        <a class="navbar-brand" href="home.php">Super Swag Software's Library Management System</a>
+    </div>
+
   	<a href="login.php">Login Page</a>
 	<a href="browse.php">Browse</a>
   	<div class="dropdown">
