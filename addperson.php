@@ -72,22 +72,18 @@ $conn->close();
 
 
           	<div class="textbox">
-			    <i class="fas fa-user"></i>
 				<input type="text" name="personName" placeholder="Name">
 			</div>
 
 			<div class="textbox">
-				<i class="fas fa-user"></i>
 				<input type="text" name="personUcard" placeholder="Ucard">
 			</div>
 
 			<div class="textbox">
-				<i class="fas fa-user"></i>
 				<input type="text" name="personAddress" placeholder="Address">
 			</div>
 
 			<div class="textbox">
-				<i class="fas fa-user"></i>
 				<input type="text" name="personTelephone" placeholder="Telephone">
 			</div>
 			  

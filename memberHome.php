@@ -13,7 +13,7 @@
 	
 <body>
 	<header>
-		<h1>Memeber Home Page</h1>
+		<h1>Member Home Page</h1>
 	</header>
 	<br><br>
 	<div class="paragraph">
