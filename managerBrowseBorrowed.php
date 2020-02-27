@@ -8,32 +8,20 @@
 	
   <div class="navbar">
 	<div class="navbar-header">
-        <a class="navbar-brand" href="home.php">Super Swag Software's Library Management System</a>
+        <a class="navbar-brand" href="managerHome.php">Super Swag Software's Library Management System</a>
     </div>
 
   	<a href="login.php">Login Page</a>
-	<a href="browse.php">Browse</a>
+	<a href="managerBrowse.php">Browse</a>
+
   	<div class="dropdown">
     	<button class="dropbtn">Book 
       		<i class="fa fa-caret-down"></i>
     	</button>
     		<div class="dropdown-content">
-				<a href="browseBorrowed.php">Borrowed Books</a>
-				<a href="borrow.php">Borrow</a>
-				<a href="return.php">Return</a>
-				<a href="addbook.php">Add</a>
-				<a href="editbook.php">Edit</a>
-				<a href="removebook.php">Remove</a>
-   			</div>
-  	</div> 
-	<div class="dropdown">
-    	<button class="dropbtn">Person 
-      		<i class="fa fa-caret-down"></i>
-    	</button>
-    		<div class="dropdown-content">
-				<a href="addperson.php">Add</a>
-				<a href="editperson.php">Edit</a>
-				<a href="removeperson.php">Remove</a>
+				<a href="managerBrowseBorrowed.php">Borrowed Books</a>
+				<a href="managerBorrow.php">Borrow</a>
+				<a href="managerReturn.php">Return</a>
    			</div>
   	</div> 
 </div>
@@ -41,19 +29,18 @@
 <body>
 
     <br><br>
-	<h1>Search the Library</h1>
+	<h1>Search the Borrowed Books</h1>
     <br><br>
     
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by title...">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Ucard...">
 
 
 	<table id="myTable" class="list">
 
     <tr class="header">
-        <th style="width:30%;">Title</th>
-        <th style="width:10%;">Author</th>
-	    <th style="width:10%;">ISBN</th>
-	    <th style="width:10%;">Quantity</th>
+        <th style="width:30%;">Ucard</th>
+        <th style="width:10%;">ISBN</th>
+	    <th style="width:10%;">Date</th>
     </tr>
     
     
@@ -63,11 +50,11 @@
 		die("Connection failed:". $connect_error);
 	}
 
-	$sql = "SELECT Title,Author,ISBN,numCopies from book";
+	$sql = "SELECT `Ucard`, `ISBN`, `date` from borrow";
 	$result = $conn-> query($sql);
 	if ($result-> num_rows > 0) {
 		while ($row = $result-> fetch_assoc()) {
-			echo "<tr><td>". $row["Title"] ."</td><td>". $row["Author"] ."</td><td>". $row["ISBN"] ."</td><td>". $row["numCopies"] ."</td></tr>";
+			echo "<tr><td>". $row["Ucard"] ."</td><td>". $row["ISBN"] ."</td><td>". $row["date"];
 		}
 	}
 	$conn-> close();
@@ -101,11 +88,6 @@
 </body>
 </html>
 
-<script>
-function goBack() {
-  window.history.back();
-}
-</script>
 <script>
 function goBack() {
   window.history.back();

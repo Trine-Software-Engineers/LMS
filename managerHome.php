@@ -7,16 +7,21 @@
 
 	
 <div class="navbar">
+	<div class="navbar-header">
+        <a class="navbar-brand" href="managerHome.php">Super Swag Software's Library Management System</a>
+    </div>
+
   	<a href="login.php">Login Page</a>
-	<a href="browse.php">Browse</a>
+	<a href="managerBrowse.php">Browse</a>
+
   	<div class="dropdown">
     	<button class="dropbtn">Book 
       		<i class="fa fa-caret-down"></i>
     	</button>
     		<div class="dropdown-content">
-				<a href="browseBorrowed.php">Borrowed Books</a>
-				<a href="borrow.php">Borrow</a>
-				<a href="return.php">Return</a>
+				<a href="managerBrowseBorrowed.php">Borrowed Books</a>
+				<a href="managerBorrow.php">Borrow</a>
+				<a href="managerReturn.php">Return</a>
    			</div>
   	</div> 
 </div>
